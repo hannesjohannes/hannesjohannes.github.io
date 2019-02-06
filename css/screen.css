@@ -6,7 +6,7 @@ body {
       font-size: 16px;
 
       margin: 0;
-      font-family: 'Celias';
+      font-family: 'Roboto', sans-serif;
 	font-style: normal;
       color: #ffffff;
       
@@ -26,6 +26,8 @@ a {
 
       text-decoration: none;
       color: #818286;
+
+      font-weight: 400;
 
       -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -464,13 +466,14 @@ form .bt {
       background-size: cover;
 }
 
-.ari { background-image: url(../imgs/projects/ari/01_thumb.jpg); }
+.ari { background-image: url(../imgs/projects/ari/02_thumb.jpg); }
 .bocenter { background-image: url(../imgs/projects/bocenter/01_thumb.jpg); }
 .instantor { background-image: url(../imgs/projects/instantor/01_thumb.jpg); }
 .omnipollo { background-image: url(../imgs/projects/omnipollo/01_thumb.jpg); }
 .christmas { background-image: url(../imgs/projects/christmas/01_thumb.jpg); }
 .mtv { background-image: url(../imgs/projects/mtv/01_thumb.jpg); }
 .fosterthepeople { background-image: url(../imgs/projects/fosterthepeople/01_thumb.jpg); }
+.movehome { background-image: url(../imgs/projects/movehome/01_thumb.jpg); }
 
 
 .item .title {
@@ -501,7 +504,7 @@ form .bt {
       line-height: 1.2em;
       margin: 0em;
       margin-bottom: 0.4em;
-      font-weight: 500;
+      font-weight: 600;
 
       -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -876,7 +879,7 @@ a.back {
       padding: 0.7em;
       padding-left: 1em;
       padding-right: 1em;
-      background-color: #3F4EF1;
+      background-color: #0f0f0f;
       color: #ffffff;
       border-radius: 2em;
       transform: scale(1);
@@ -884,7 +887,7 @@ a.back {
 
 .bt:hover {
       box-shadow: inset 0px -2px 1px rgba(15,15,15,0.32);
-      background-color: #2F3EDD;
+      background-color: #5F5F5F;
       
       transform: scale(1.2);
 
