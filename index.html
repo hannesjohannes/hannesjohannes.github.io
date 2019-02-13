@@ -2,10 +2,11 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/screen.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 <body>
 
-<div class="home">
+<main id="swup" class="home transition-fade">
   <div class="mark"><img src="imgs/mark.svg" /></div>
   <div class="name"><img src="imgs/name.svg" /></div>
   <div class="lamp">
@@ -13,7 +14,7 @@
       Your browser does not support the video tag.
     </video>
   </div>
-  <div class="link"><a href="work.html">Our work!</a></div>
+  <div class="link"><a href="/work.html">Our work!</a></div>
   <div class="hand">
     <video autoplay muted src="imgs/hand/in.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -38,9 +39,19 @@
 micro-animation studio based out of Berlin, Germany and Stockholm, Sweden. We love the combination of colourful illustrations and animating shapes.
 </p>
   </div>
-</div>
+</main>
 
 
+<script src="dist/swup.js"></script>
+<script> const swup = new Swup(); </script>
+
+<script>
+  let options = {
+    LINK_SELECTOR: 'a',
+    debugMode: true,
+};
+var swup = new Swup(options);
+</script>
 
 </body>
 </html>

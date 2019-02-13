@@ -3,11 +3,10 @@
 body {
       width: 100%;
       padding: 0;
-      font-size: 16px;
 
       margin: 0;
       font-family: 'Roboto', sans-serif;
-	font-style: normal;
+	   font-style: normal;
       color: #ffffff;
       
       transition:all 0.3s ease;
@@ -34,6 +33,9 @@ a {
 
 }
 
+h1 { font-size: 2em; line-height: 1.2em; }
+h3 { margin: 0; }
+
 
 a:hover {
       color: #0f0f0f;
@@ -51,8 +53,13 @@ a:hover {
 .black a { color: #ffffff; }
 .black a:hover { color: #3C3C3C; }
 
-/*      Header     */
 
+
+
+
+
+
+/*      HP     */
 
 .home {
       height: 100%;
@@ -212,210 +219,270 @@ video {
 }
 
 
+
+/*      Regular Pages     */
+
+
 .work {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+
       padding: 2em;
       padding-top: 4em;
 }
 
-.project {
-      padding: 1em;
-      color: #0f0f0f;
-
-
+.work a {
+    grid-column: span 4;
 }
 
-.project h1 {
-      padding-left: 3em;
-      padding-right: 3em;
-      margin-bottom: 0;
-}
-
-.project p {
-      padding-left: 8em;
-      padding-right: 8em;
-}
-
-.project img {
-      width: 100%;
-}
-
-.work .one-grid {
-
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: left;
-
-      justify-content: right;
-      padding-bottom: 1em;
-}
-
-.work .two-grid {
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 2em;
-      margin-bottom: 2em;
-      text-align: left;
-
-      justify-content: right;
-
-      height: 16em;
-
-}
-
-.work .three-grid {
-
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 2em;
-      margin-bottom: 2em;
-      text-align: left;
-
-      justify-content: right;
-
-      height: 12em;
-
-}
-
-.project .one-grid {
-
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: center;
-
-      justify-content: right;
-      padding-top: 3em;
-      padding-bottom: 3em;
-}
-
-.project .two-grid {
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 1em;
-      text-align: center;
-
-      justify-content: right;
-      padding-top: 3em;
-      padding-bottom: 3em;
-}
-
-.project .three-grid {
-
-
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 1em;
-      text-align: center;
-
-      justify-content: right;
-      padding-top: 3em;
-      padding-bottom: 3em;
-
+.work a:nth-child(1),
+.work a:nth-child(2),
+.work a:nth-child(6),
+.work a:nth-child(7),
+.work a:nth-child(11),
+.work a:nth-child(12) {
+    grid-column: span 6;
 }
 
 .about {
-      padding: 1em;
       color: #0f0f0f;
-}
-
-.about .one-grid {
 
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
 
-      justify-content: right;
-      padding-top: 1em;
-      padding-bottom: 0em;
-      padding-left: 3em;
-      padding-right: 3em;
+      padding: 2em;
+      padding-top: 4em;
+      padding-bottom: 4em;
+}
+
+.about h1 {
+    text-align: center;
+    grid-column: 2 / span 10;
+    grid-row: 1;
+    margin-bottom: 1em;
 }
 
 .about .two-grid {
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 1em;
-      text-align: center;
-
-
-      justify-content: right;
-      text-align: left;
-      padding-top: 0em;
-      padding-bottom: 3em;
-      padding-left: 3em;
-      padding-right: 3em;
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    margin-bottom: 1em;
 }
 
-.about .three-grid {
+.about h4 {
+  color: #9E9E9E;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  grid-column: 2 / span 10;
+  grid-row: 3;
+  margin-bottom: 1em;
+}
 
+.about .clients {
+  grid-column: 3 / span 8;
+  grid-row: 4;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-column-gap: 2em;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.whatwedo {
+      background-color: #9E9E9E;
+      color: #fff;
 
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 1em;
-      text-align: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
 
-      justify-content: right;
+      padding: 2em;
+      padding-top: 4em;
+}
+
+.whatwedo h1 {
+    text-align: center;
+    grid-column: 3 / span 8;
+    grid-row: 1;
+    margin-bottom: 1em;
+}
+
+.whatwedo .usps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    margin-bottom: 2em;
+}
+
+.whatwedo .point {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+
+}
+
+.whatwedo .point img {
+            grid-column: 1;
+            grid-row: 1;
+}
+
+.whatwedo .point p {
+            text-align: left;
+            grid-column: 2 / 5;
+            grid-row: 1;
+            margin: 0;
+}
+
+.whatwedo p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    grid-column: 5 / span 4;
+    grid-row: 3;
+    margin-bottom: 2em;
+}
+
+.whatwedo a {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    grid-column: 5 / span 4;
+    grid-row: 4;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+
+.project {
+      padding: 2em;
       padding-top: 3em;
-      padding-bottom: 3em;
-
+      color: #0f0f0f;
 }
-
 
 .contact {
-      padding: 4em;
-      padding-top: 1em;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
+
+      padding: 2em;
+      padding-top: 4em;
+
+
+      
       color: #0f0f0f;
       background-color: #BFBFBF;
 }
 
-.contact .one-grid {
-
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: center;
-
-      justify-content: right;
-      padding-top: 1em;
-      padding-bottom: 0em;
-}
-
-.contact h1 {
-
-      text-align: center;
-      padding-right: 1em;
-      padding-bottom: 0em;
-}
-
 .contact .two-grid {
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 1em;
-      text-align: center;
+    grid-column-gap: 1em;
+    margin-bottom: 0em;
+}
 
 
-      justify-content: right;
-      text-align: left;
-      padding-top: 0em;
-      padding-bottom: 0em;
+.contact p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 2em;
+}
+
+.contact form {
+    grid-column: 2 / span 5;
+    grid-row: 1;
 }
 
 .contact img {
-      width: 60%;
-      justify-self: center;
-      align-self: center;
+    align-self: center;
+    grid-column: 7 / span 5;
+    grid-row: 1;
 }
 
-.contact input {
-      height: 5em;
+.contact a {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+
+img { width: 100%; }
+h1 { margin: 0; }
+
+
+.one-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      justify-content: right;
+      padding-bottom: 1em;
+      margin-bottom: 2em;
+}
+
+.text {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  }
+
+.two-grid {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2em;
+      margin-bottom: 2em;
+      text-align: left;
+
+      justify-content: right;
+
+
+}
+
+.three-grid {
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 2em;
+      margin-bottom: 2em;
+      text-align: left;
+
+      justify-content: right;
+
+}
+
+
+
+input {
+      display: block;
+
+      font-size: 16px;
+      padding-left: 16px;
+
+      width: 100%;
+      height: 4em;
+      margin-bottom: 2em;
       border: 0px;
 }
 
-.contact textarea {
-      height: 20em;
+textarea {
+      font-size: 16px;
+      width: 100%;
+      height: 8em;
+      margin-bottom: 2em;
       border: 0px;
+      padding: 16px; padding-top: 20px;
 }
 
 form p {
@@ -432,27 +499,7 @@ form .grid-two {
       padding-bottom: 0em;
 }
 
-form .bt {
-      width: 14em;
-      font-size: 16px;
-      margin-top: 3em;
-      margin-left: 0;
-}
 
-
-
-.contact .three-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 1em;
-      grid-row-gap: 1em;
-      text-align: center;
-
-      justify-content: right;
-      padding-top: 3em;
-      padding-bottom: 3em;
-
-}
 
 .item {
       color: #fff;
@@ -461,10 +508,41 @@ form .bt {
       height: auto;
       background-color: #0F0019;
 
+
+      position:relative;
+      display:inline-block;
+
       text-align: center;
 
       background-size: cover;
 }
+
+.item:hover .title {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    text-align:center;
+    -webkit-transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+    opacity: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    vertical-align:top;
+}
+
 
 .ari { background-image: url(../imgs/projects/ari/02_thumb.jpg); }
 .bocenter { background-image: url(../imgs/projects/bocenter/01_thumb.jpg); }
@@ -477,19 +555,28 @@ form .bt {
 
 
 .item .title {
-      display: grid;
+
+
+    vertical-align: center;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    padding-top: 2em;
     width: 100%;
     height: 100%;
     text-shadow: 0px 1px 2px rgba(15,15,15,0.48);
 
     background-color: rgba(15,0,0,0.0);
 
-      padding: 1em;
-
-      padding-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
       -webkit-transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 
 
 
@@ -498,22 +585,23 @@ form .bt {
 .item .title h3 {
       opacity: 0;
 
-      align-self: end;
 
       font-size: 1em;
       line-height: 1.2em;
-      margin: 0em;
-      margin-bottom: 0.4em;
       font-weight: 600;
 
       -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+      transition-delay: 40ms;
 }
 
+.item:hover .title {
+      padding-top: 0em;
+      opacity: 1;
+}
 .item .title span {
 
-      align-self: start;
       opacity: 0;
 
       font-size: 0.60em;
@@ -524,25 +612,13 @@ form .bt {
       transition-delay: 40ms;
 }
 
-.work a {
-
-}
-
-
-.item:hover .title {
-
-      padding-top: 1em;
-      background-color: rgba(15,0,0,0.32);
-
-}
 
 .item:hover .title h3 {
       opacity: 1;
 }
 
 .item:hover .title span {
-      opacity: 1;
-           
+      opacity: 1;         
 }
 
 
@@ -563,6 +639,7 @@ form .bt {
 
       justify-content: center;
       vertical-align: center;
+
 }
 
 .logo {
@@ -833,6 +910,7 @@ a.back {
 
 .navigation-minimized {
       position: fixed;
+      z-index: 15;
       bottom: 0;
       background-color: #fff;
 
@@ -874,9 +952,7 @@ a.back {
 }
 
 .bt {
-      display: inline;
-      margin-left: 2em;
-      padding: 0.7em;
+      padding: 1em;
       padding-left: 1em;
       padding-right: 1em;
       background-color: #0f0f0f;
@@ -888,11 +964,6 @@ a.back {
 .bt:hover {
       box-shadow: inset 0px -2px 1px rgba(15,15,15,0.32);
       background-color: #5F5F5F;
-      
-      transform: scale(1.2);
-
-      -webkit-animation: jelly 1000ms linear both;
-  animation: jelly 1000ms linear both;
 }
 
 a.bt {
@@ -901,7 +972,6 @@ a.bt {
 
 a.bt:hover {
       color: #ffffff;
-           transform: scale(1.2);
 
 }
 
@@ -918,13 +988,15 @@ a.active:hover {
 /*      Media queries     */
 
 @media only screen and (max-width: 640px)  {
-      body {font-size: 24px;}
+      body {font-size: 24px; line-height: 40px;}
       .work { padding: 1em; padding-top: 3.5em; padding-bottom: 3em;}
-      .work .two-grid { grid-template-columns: repeat(1, 1fr); grid-row-gap: 1em; margin-bottom: 1em; height: auto; }
-      .work .three-grid { grid-template-columns: repeat(1, 1fr); grid-row-gap: 1em; margin-bottom: 1em; height: auto; }
-      .item { height: 12em; }
+      .project { padding: 1em; padding-top: 3.5em; padding-bottom: 3em;}
+      .work, .work .two-grid, .project .two-grid { grid-template-columns: repeat(1, 1fr); grid-row-gap: 1em; margin-bottom: 1em; height: auto; }
+      .work, .work .three-grid, .project .two-grid  { grid-template-columns: repeat(1, 1fr); grid-row-gap: 1em; margin-bottom: 1em; height: auto; }
+      .work a { grid-column: span 6; }
 
-      .item .title { padding-top: 1em; background-color: rgba(15,0,0,0.24); }
+
+      .item .title { opacity: 1; padding-top: 1em; background-color: rgba(15,0,0,0.24); }
       .item .title h3 { opacity: 1; }
       .item .title span { opacity: 1; }
       .work a { color: #ffffff; }
@@ -935,23 +1007,313 @@ a.active:hover {
       .header { grid-template-columns: repeat(1, 1fr);
       padding: 0.5em; }
       .logo { justify-self: center; }
+
+
+      
+      .text { padding-left: 0em; padding-right: 0em; }
+
+
+
+      .about {
+      color: #0f0f0f;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
+
+      padding: 1em;
+      padding-top: 4em;
+      padding-bottom: 4em;
+}
+
+.about h1 {
+    text-align: center;
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin-bottom: 1em;
+}
+
+.about .two-grid {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    margin-bottom: 1em;
+}
+
+.about h4 {
+  color: #9E9E9E;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  grid-column: 1 / span 12;
+  grid-row: 3;
+  margin-bottom: 1em;
+}
+
+.about .clients {
+  grid-column: 1 / span 12;
+  grid-row: 4;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-column-gap: 2em;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.whatwedo {
+      background-color: #9E9E9E;
+      color: #fff;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
+
+      padding: 2em;
+      padding-top: 3em;
+}
+
+.whatwedo h1 {
+    text-align: center;
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin-bottom: 1em;
+}
+
+.whatwedo .usps {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    margin-bottom: 2em;
+}
+
+.whatwedo .point {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+
+}
+
+.whatwedo .point img {
+            grid-column: 1;
+            grid-row: 1;
+}
+
+.whatwedo .point p {
+            text-align: left;
+            grid-column: 2 / 5;
+            grid-row: 1;
+            margin: 0;
+            display: inline;
+}
+
+.whatwedo p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    grid-column: 2 / span 10;
+    grid-row: 3;
+    margin-bottom: 2em;
+            display: none;
+}
+
+.whatwedo a {
+    grid-column: 4 / span 6;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+  .contact form {
+    grid-column: 1 / span 12;
+}
+
+.contact img {
+    display: none;
+}
+
+
 }
 
 @media only screen and (min-width: 640px) and (max-width: 900px)  {
-      body {font-size: 16px;}
-      .work { padding-top: 6em;}
+      body {font-size: 24px; line-height: 40px; }
+      .work, .project { padding-top: 6em;}
+      .work, .work .two-grid, .project .two-grid { grid-template-columns: repeat(1, 1fr); grid-row-gap: 1em; margin-bottom: 1em; height: auto; }
+      .work, .work .three-grid, .project .two-grid  { grid-template-columns: repeat(1, 1fr); grid-row-gap: 1em; margin-bottom: 1em; height: auto; }
+      .work a { grid-column: span 6; }
+
+      .text { padding-top: 1em; padding-bottom: 1em; padding-left: 4em; padding-right: 4em; }
+
       
+      .about {
+      color: #0f0f0f;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
+
+      padding: 2em;
+      padding-top: 4em;
+      padding-bottom: 4em;
+}
+
+.about h1 {
+    text-align: center;
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin-bottom: 1em;
+}
+
+.about .two-grid {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    margin-bottom: 1em;
+}
+
+.about h4 {
+  color: #9E9E9E;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  grid-column: 1 / span 12;
+  grid-row: 3;
+  margin-bottom: 1em;
+}
+
+.about .clients {
+  grid-column: 1 / span 12;
+  grid-row: 4;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-column-gap: 2em;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.whatwedo {
+      background-color: #9E9E9E;
+      color: #fff;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 2em;
+
+      padding: 2em;
+      padding-top: 3em;
+}
+
+.whatwedo h1 {
+    text-align: center;
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin-bottom: 1em;
+}
+
+.whatwedo .usps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    margin-bottom: 2em;
+}
+
+.whatwedo .point {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+
+}
+
+.whatwedo .point img {
+            grid-column: 1;
+            grid-row: 1;
+}
+
+.whatwedo .point p {
+            text-align: left;
+            grid-column: 2 / 5;
+            grid-row: 1;
+            margin: 0;
+}
+
+.whatwedo p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    grid-column: 2 / span 10;
+    grid-row: 3;
+    margin-bottom: 2em;
+}
+
+.whatwedo a {
+    grid-column: 4 / span 6;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+  .contact form {
+    grid-column: 1 / span 12;
+}
+
+.contact img {
+    display: none;
+}
+
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1200px)  {
-      body {font-size: 24px;}
+      body {font-size: 24px; line-height: 40px;}
+
+      .whatwedo .usps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    margin-bottom: 2em;
+}
+
+  .contact .two-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  input {
+    margin-bottom: 1em;
+  }
+
+  .contact form {
+    grid-column: 2 / span 6;
+}
+
+.contact img {
+    grid-column: 8 / span 4;
+}
+
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1800px)  {
-      body {font-size: 32px;}
+      body {font-size: 32px; line-height: 48px;}
 }
 
 @media only screen and (min-width: 1800px)  {
-      body {font-size: 40px;}
+      body {font-size: 40px; line-height: 60px;}
 }
 
